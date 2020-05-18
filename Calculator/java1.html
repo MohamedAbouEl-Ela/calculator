@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Calculator </title>
+    <link rel='stylesheet' href='css/fontawesome-all.min.css' />
+    <!-- link fontawesome -->
+    <link rel='stylesheet' href="css/bootstrap.min.css" />
+    <!-- link Css bootsrap -->
+    <link rel='stylesheet' href='css/test.css' />
+    <!-- link Css --> 
+</head>
+
+<body>
+    <div class=" claculator_form">
+        <h1> Calculator</h1>
+        <div class="box">
+                <input type="text" id="show" placeholder="0" readonly="readonly" >
+                <input type="text" id="result"  readonly="readonly" >
+    <form>
+           
+        <input onclick="get_clear()" type="button" value="Ac" style="background-color:red;">
+        <input onclick="get_operator('+')" type="button" value="+" >
+        <input onclick="get_operator('-')" type="button" value="-" >
+        <input onclick="backspace()" type="button" value="<-" >
+
+        <br>
+
+        <input onclick="get_number(1)" type="button" value="1" >
+        <input onclick="get_number(2)" type="button" value="2" >
+        <input onclick="get_number(3)" type="button" value="3" >
+        <input onclick="get_operator('/')" type="button" value="/" >
+
+        <br>
+
+        <input onclick="get_number(4)" type="button" value="4" >
+        <input onclick="get_number(5)" type="button" value="5" >
+        <input onclick="get_number(6)" type="button" value="6" >
+        <input onclick="get_operator('*')" type="button" value="*" >
+
+        <br>
+
+        <input onclick="get_number(7)" type="button" value="7" >
+        <input onclick="get_number(8)" type="button" value="8" >
+        <input onclick="get_number(9)" type="button" value="9" >
+        <br>
+
+        <input onclick="get_number(0)" type="button" value="0" >
+        <input onclick="get_number()" type="button" value="." >
+        <input onclick="get_result()" type="button" value="=" style="background-color:#0cce0c;width: 100px;" >
+    </form>
+    </div>
+</div>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/one.js"> </script>
+</body>
+
+</html>
